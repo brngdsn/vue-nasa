@@ -1,7 +1,7 @@
 {
-  "name": "api-experiment-010",
-  "version": "1.0.0",
-  "description": "A Vue.js project",
+  "name": "vue-nasa",
+  "version": "0.2.0",
+  "description": "nasa api fun",
   "author": "brn.gdsn@gmail.com",
   "private": true,
   "scripts": {
@@ -13,11 +13,14 @@
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
   "dependencies": {
+    "axios": "^0.16.0",
     "bulma": "^0.3.2",
-    "moment": "^2.17.1",
+    "gvc": "^0.2.0",
+    "moment": "^2.18.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
     "vue": "^2.2.2",
+    "vue-axios": "^2.0.1",
     "vue-resource": "^1.2.1",
     "vue-router": "^2.3.0",
     "vuetrend": "^0.2.2",

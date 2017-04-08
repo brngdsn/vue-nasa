@@ -2,18 +2,26 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import 'bulma'
 import Vue from 'vue'
-import VueResource from 'vue-resource'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 import App from './App'
 import router from './router'
+import store from './store'
 
 Vue.config.productionTip = false
 
-Vue.use(VueResource)
+Vue.use(VueAxios, axios)
+
+// Vue.http.interceptors.push((req, next) => {
+//   console.log(req)
+//   next(response => console.log(response))
+// })
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
+  store,
   template: '<App/>',
   components: { App }
 })

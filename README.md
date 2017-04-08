@@ -1,6 +1,6 @@
-# api-experiment-010
+# vue-nasa
 
-> A Vue.js project
+fun with nasa api
 
 ## Build Setup
 
